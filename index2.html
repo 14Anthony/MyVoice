@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script3.js"></script>
+    <!-- <script src="https://genius.codes"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <title>Document</title>
+</head>
+<header id="headerImage">
+    <nav class="navbar p-3 mb-3 text-white justify-content-left bg-dark">
+        <h1 class="display-6" style="margin-left: 25px;" id="myVoice">My Voice</h1>
+    </nav>
+</header>
+
+<body style="background-color: black;">
+    <main class="container-fluid">
+        <!--Row 2-->
+        <div class="container">
+            <div class="row">
+                <!--Lyrics Section-->
+                <div class="col-md-6" id="lyrics">
+                    <!--Song Title and Artist-->
+                    <div id="songTitle" style="font-size:15px;color:#5708a1;"></div>
+                    <div id="artistName" style="font-size:15px;color:#5708a1"></div>
+                    <strong style="font-size:30px;" id="strong">Lyrics</strong>
+                    <p id="songLyrics"> Step 1 : Login to your Google account at the top right. Step 2 : Plug In by just
+                        clicking the step 2 button Step 3: enter int your song and artist Step 4 : It's showtime
+                    </p>
+                </div>
+                <!--Music Video Section-->
+                <div class="col-md-6" id="video">
+                    <button onclick="authenticate().then(loadClient)" style="border-color:#5708a1; ;">Step
+                        : 1
+                        LOGIN:</button>
+                    <button onclick="execute()" style="border-color:#5708a1; ">Step : 2
+                        PLUG-IN</button>
+                    <iframe id="existing-iframe-example" width="480" height="270"
+                        src="https://www.youtube.com/embed/EvuL5jyCHOw?enablejsapi=1" frameborder="0"
+                        style="border: solid 4px #5708a1"></iframe>
+                    <form class="row justify-content-sm-center" id="searchArea">
+                        <input type="text" id="search" placeholder="i.e  Fly Away " style="border-color: #5708a1;">
+                        <input type="text" id="artist" placeholder="i.e. Lenny Kravitz" style="border-color:#5708a1;">
+                        <button id="submit" type="submit"><i class="fa fa-search"
+                                style="border-color:#5708a1;">MyVoice</i></button>
+                        <br>
+                    </form>
+                    <br>
+                    <br>
+                    <!--Album Artwork Section-->
+                    <h2 id="artWork">Welcome myVoice Center Stage</h2>
+                    <br><br>
+                    <div class="col-md-12" id="albumArt">
+                        <iframe src="" id="art" width="500" height="350"></iframe>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
