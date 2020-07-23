@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../myVoice/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -12,9 +13,8 @@
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="../myVoice/script3.js"></script>
     <!-- <script src="https://genius.codes"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <title>Document</title>
 </head>
 <header id="headerImage">
@@ -49,8 +49,10 @@
                         src="https://www.youtube.com/embed/EvuL5jyCHOw?enablejsapi=1" frameborder="0"
                         style="border: solid 4px #5708a1"></iframe>
                     <form class="row justify-content-sm-center" id="searchArea">
-                        <input type="text" id="search" placeholder="i.e  Fly Away " style="border-color: #5708a1;">
-                        <input type="text" id="artist" placeholder="i.e. Lenny Kravitz" style="border-color:#5708a1;">
+                        <input type="text" id="search" placeholder="Song Title i.e  Fly Away "
+                            style="border-color: #5708a1; width: 240px;">
+                        <input type="text" id="artist" placeholder="Artist Name i.e. Lenny Kravitz"
+                            style="border-color:#5708a1;width: 240px;">
                         <button id="submit" type="submit"><i class="fa fa-search"
                                 style="border-color:#5708a1;">MyVoice</i></button>
                         <br>

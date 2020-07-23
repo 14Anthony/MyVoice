@@ -90,3 +90,5 @@ const lyrics = function (song, artist) {
         console.log(response);
     });
 }
+
+///https://wordpresscheat.com/fixing-cloudflare-error-522/#:~:text=A%20522%20error%20occurs%20because%20CloudFlare%20could%20not,established.%20This%20problem%20may%20happen%20for%20various%20reasons%3A
