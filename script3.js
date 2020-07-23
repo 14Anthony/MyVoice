@@ -74,17 +74,19 @@ gapi.load("client:auth2", function () {
 // Make sure the client is loaded and sign-in is complete before calling this method.
 // <script src = " https;// ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 const lyrics = function (song, artist) {
+
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://sridurgayadav-chart-lyrics-v1.p.rapidapi.com/apiv1.asmx/SearchLyricDirect?artist=" + artist + "&song=" + song,
+        "url": "https://mourits-lyrics.p.rapidapi.com/?artist=" + artist + "&song=" + song,
         "method": "GET",
         "headers": {
-            "x-rapidapi-host": "sridurgayadav-chart-lyrics-v1.p.rapidapi.com",
-            "x-rapidapi-key": "1a30d91b2bmsh674aa11a828914dp11904ajsn789605f36de1"
+            "x-rapidapi-host": "mourits-lyrics.p.rapidapi.com",
+            "x-rapidapi-key": "cbaeb3d20bmshd897cd760f791c0p1e1ff7jsn571a482fd99c"
         }
     }
+
     $.ajax(settings).done(function (response) {
         console.log(response);
-    })
+    });
 }
