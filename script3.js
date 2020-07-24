@@ -5,7 +5,7 @@ function authenticate() {
             function (err) { console.error("Error signing in", err); });
 }
 function loadClient() {
-    gapi.client.setApiKey("AIzaSyC5Kui5dhXoKHNB5y6Sfe81_lRVO3yHEo4");
+    gapi.client.setApiKey("AIzaSyBURWWvbqQFYaPRdjpSQUMcEHdEs1_bHXY");
     return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
         .then(function () { console.log("GAPI client loaded for API"); },
             function (err) { console.error("Error loading GAPI client for API", err); });
@@ -46,9 +46,10 @@ $(document).ready(function () {
 
 
 
-
+        $('#lyrics').empty();
         $('#search').val('');
         $('#artist').val('');
+
 
     });
 
@@ -77,7 +78,7 @@ function execute(song, artist) {
 
 }
 gapi.load("client:auth2", function () {
-    gapi.auth2.init({ client_id: "178351258387-pktbqm45kptom00o5a1t0fdrbgnpvk48.apps.googleusercontent.com" });
+    gapi.auth2.init({ client_id: "817514459902-3j77ioi7ls33sb1k09r0mjlu10gp30ac.apps.googleusercontent.com" });
 });
 
 // Make sure the client is loaded and sign-in is complete before calling this method.
