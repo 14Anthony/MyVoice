@@ -46,7 +46,7 @@ $(document).ready(function () {
 
 
 
-        $('#lyrics').empty();
+        // $('#lyrics').empty();
         $('#search').val('');
         $('#artist').val('');
 
